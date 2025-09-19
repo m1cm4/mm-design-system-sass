@@ -17,3 +17,13 @@
     }
   }
 }
+
+.fine-print{
+   font-size: $fine-print-font-size;
+   color: $fine-print-color;
+   a{
+      color: $fine-print-link-font-color;
+      font-size: $fine-print-link-font-size;
+      text-decoration: none;
+   }
+}

@@ -3,20 +3,27 @@
 
 .container {
   --padding: #{$container-min-margin-inline} * 2;
-  --max-width: #{$container-max-width-m};
+  --max-width: #{$container-max-width-medium};
   
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
  }
 
-.container[data-type="s"]{
-  --max-width: #{$container-max-width-s};
+/*
+class="container" data-type="narrow"
+class="container +narrow"
+*/
+.container[data-type="narrow"], 
+.container.\?narrow{
+  --max-width: #{$container-max-width-narrow};
 }
 
-.container[data-type="xl"]{
-  --max-width: #{$container-max-width-xl};
+.container[data-type="wide"], 
+.container.\?wide{
+  --max-width: #{$container-max-width-wide};
 }
 
-.container[data-type="full"]{
+.container[data-type="full"],
+.container.\?full{
   --max-width: 100%;
 }
