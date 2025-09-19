@@ -18,8 +18,13 @@
    padding: $button-padding;
    font-weight: $button-font-weight;
    
-   transition : 200ms ease-in-out; 
+   transition : $button-animation; 
    
+   &.-large{
+      padding: $button-large-padding;
+   }
+
+   &.-accent,
    &[data-type="accent"]{
       background-color: $button-accent-background;
       color: $button-accent-color;
@@ -28,7 +33,7 @@
          background-color: $button-accent-background-hover;
       }
    }
-
+   &.-primary,
    &[data-type="primary"]{
       background-color: $button-primary-background;
       color: $button-primary-color;

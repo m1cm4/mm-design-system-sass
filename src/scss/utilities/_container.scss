@@ -11,19 +11,19 @@
 
 /*
 class="container" data-type="narrow"
-class="container +narrow"
+class="container -narrow"
 */
 .container[data-type="narrow"], 
-.container.\?narrow{
+.container.-narrow{
   --max-width: #{$container-max-width-narrow};
 }
 
 .container[data-type="wide"], 
-.container.\?wide{
+.container.-wide{
   --max-width: #{$container-max-width-wide};
 }
 
 .container[data-type="full"],
-.container.\?full{
+.container.-full{
   --max-width: 100%;
 }

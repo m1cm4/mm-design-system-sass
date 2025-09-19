@@ -126,10 +126,13 @@ $hero-padding-block: clamp(15rem, 15vh, 20rem);
 $button-font-family: $body-font-family;
 $button-font-size: $font-size-400;
 $button-font-weight: $body-font-weight;
-$button-text-transform: uppercase;
+$button-text-transform: none;
 $button-padding: 0.75em 2em;
+$button-large-padding: .86em 1.2em;
 $button-border: 0;
 $button-border-radius: $border-radius-1;
+$button-animation: 280ms ease-out;
+
 
 $button-default-background: transparent;
 $button-default-background-hover: $color-neutral-200;
@@ -137,7 +140,7 @@ $button-default-color: $link-color;
 $button-default-color-hover: $link-color-hover;
 
 $button-primary-color: $color-neutral-100;
-$button-primary-background: $color-primary-700;
+$button-primary-background: $color-primary-500;
 $button-primary-color-hover: $color-neutral-100;
 $button-primary-background-hover: $color-primary-800;
 
