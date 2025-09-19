@@ -1,0 +1,182 @@
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'sizes' as *;
+@use "unit.functions" as *;
+
+// THEMES =======================================
+$active-theme: $light-colors-palette;
+$enable-media-query-dark-mode: true;//false= il n'y a pas de double modes à prendre en compte 
+
+// COLORS =======================================
+$color-background-default: $color-neutral-100;
+$color-text-default: $color-neutral-700;
+$color-text-interactive-default: $color-primary-400;
+$color-text-interactive-hover: $color-accent-500;
+
+// RADIUS =======================================
+$border-radius-1: $size-2;//8px
+$border-radius-2: $size-4;//16px
+
+// BOX SHADOW ===================================
+$box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012),
+  0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
+
+  $box-shadow-2: 0px 6px 5px rgb(0, 0, 0, 0.016),
+  0px 22px 18px rgb(0, 0, 0, 0.024), 0px 100px 80px rgb(0, 0, 0, 0.04);
+
+  $box-shadow-3: 0px 6px 5px rgb(0, 0, 0, 0.02), 0px 22px 18px rgb(0, 0, 0, 0.03),
+  0px 100px 80px rgb(0, 0, 0, 0.05);
+
+$box-shadow-4: 0px 6px 5px rgb(0, 0, 0, 0.03), 0px 22px 18px rgb(0, 0, 0, 0.042),
+  0px 100px 80px rgb(0, 0, 0, 0.07);
+
+$box-shadow-5: 0px 6px 5px rgb(0, 0, 0, 0.04), 0px 22px 18px rgb(0, 0, 0, 0.06),
+  0px 100px 80px rgb(0, 0, 0, 0.1);
+
+// BODY =========================================
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-400;
+$body-font-weight: $font-weight-regular;
+$body-line-height: 1.5;
+$body-text-color: $color-text-default;
+$body-background-color: $color-background-default;
+
+// links ========================================
+$link-color: $color-text-interactive-default;
+$link-color-hover: $color-text-interactive-hover;
+
+// TITLES =======================================
+$title-font-family: $font-family-accent;
+$title-color-default: $color-neutral-800;
+$title-font-weight: $font-weight-semi-bold;
+$title-letter-spacing: $letter-spacing-wide;
+$title-line-height: 1.1;
+$title-text-transform: none;
+
+$title-1-font-size: $font-size-800;
+$title-1-color: $title-color-default;
+$title-2-font-size: $font-size-700;
+$title-2-color: $title-color-default;
+$title-3-font-size: $font-size-600;
+$title-3-color: $title-color-default;
+
+//  LAYOUT ======================================
+$grid-gap: $size-6;
+$flex-group-gap: $size-4;
+$hero-padding-block: clamp(15rem, 22dvh, torem(320));
+$section-padding-block: clamp(1.7rem, 10dvh, torem(94));// responsive height
+
+$container-min-margin-inline: $size-4;
+$container-max-width-s: torem(570);//35.6rem
+$container-max-width-m: torem(1024);//64rem
+$container-max-width-xl: torem(1200);//75rem
+
+$auto-grid-min: min(250px, 100%);
+
+// HEADERS ======================================
+$site-header-background-color: $color-primary-800;
+$site-header-color: $color-neutral-100;
+$site-header-padding: $size-8 0;
+$site-header-margin: 0;
+$site-header-justify-small-screens: center;
+$site-header-justify-large-screens: space-between;
+$site-header-align: center;
+
+// FOOTER =======================================
+$site-footer-background-color: $color-primary-800;
+$site-footer-text-color: $color-primary-100;
+$site-footer-padding: $size-8 0;
+$site-footer-link-font-family: $font-family-accent;
+$site-footer-link-color: $color-neutral-100;
+$site-footer-link-color-hover: $color-accent-400;
+$site-footer-link-text-decoration: none;
+
+// Navigation ===================================
+$navigation-color: $site-header-color;
+$navigation-color-hover: $color-primary-300;
+$navigation-font-size: $font-size-400;
+$navigation-gap: $size-9;
+$navigation-link-text-decoration: none;
+$navigation-font-family: $body-font-family;
+$navigation-font-weight: $body-font-weight;
+$navigation-letter-spacing: $letter-spacing-wide;
+
+$fine-print-font-size: $font-size-200;
+$fine-print-color: $color-neutral-400;
+$fine-print-link-font-size: $fine-print-font-size;
+$fine-print-link-font-color: $fine-print-color;
+
+// HERO =========================================
+$hero-padding-block: clamp(15rem, 15vh, 20rem);
+
+
+// LOGO =========================================
+
+// $logo-fill-default: $color-primary-400;
+// $logo-fill-header: $color-primary-200;
+// $logo-fill-footer: $color-accent-400;
+// $logo-size-default: 14rem;
+// $logo-size-header: $logo-size-default;
+// $logo-size-footer : $logo-size-default;
+
+// BUTTON =======================================
+$button-font-family: $body-font-family;
+$button-font-size: $font-size-400;
+$button-font-weight: $body-font-weight;
+$button-text-transform: uppercase;
+$button-padding: 0.75em 2em;
+$button-border: 0;
+$button-border-radius: $border-radius-1;
+
+$button-default-background: transparent;
+$button-default-background-hover: $color-neutral-200;
+$button-default-color: $link-color;
+$button-default-color-hover: $link-color-hover;
+
+$button-primary-color: $color-neutral-100;
+$button-primary-background: $color-primary-700;
+$button-primary-color-hover: $color-neutral-100;
+$button-primary-background-hover: $color-primary-800;
+
+$button-accent-color: $color-neutral-100;
+$button-accent-background: $color-accent-400;
+$button-accent-color-hover: $color-neutral-100;
+$button-accent-background-hover: $color-accent-500;
+
+// CARD ========================================= 
+// for gap > $grid-gap
+$card-flow-spacing: $size-2;
+$card-padding: $size-8;
+$card-box-shadow: $box-shadow-1;
+$card-border-radius: $border-radius-2;
+$card-background-default: $color-primary-100;
+$card-color-default: $body-text-color;
+$card-font-family: $body-font-family;
+$card-line-height: $body-line-height;
+$card-title-color-default: $card-color-default;
+$card-title-font-size: $font-size-600;
+$card-body-padding: $size-4;
+
+
+// FORM =========================================
+$form-label-color: $body-text-color;
+$form-label-font-family: $body-font-family;
+$form-label-font-weight: $font-weight-bold;
+$form-label-font-size: $body-font-size;
+
+$form-input-color: $body-text-color;
+$form-input-font-family: $body-font-family;
+$form-input-font-weight: $font-weight-semi-bold;
+$form-input-font-size: $body-font-size;
+$form-input-background-color: $color-neutral-100;
+$form-input-border-default: 3px solid $color-primary-200;
+$form-input-border-focus: 3px solid $color-primary-400;
+$form-input-padding: $size-3;
+$form-input-border-radius: $border-radius-1;
+
+$form-placeholder-color: $color-primary-300;
+$form-placeholder-font-family: $form-input-font-family;
+$form-placeholder-font-weight: $form-input-font-weight;
+$form-placeholder-font-size: $body-font-size;
+
+$form-group-spacing: 0.5rem;

@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+
+
+// one loop: creating utility classes with the first nested map only.
+// !!to work, all the nested map must have the same number of size and the same names.
+$first-font-size-map: true;
+@each $screen-size, $size-map in $font-sizes {
+   @if $first-font-size-map{
+      @each $size-name, $size-value in $size-map {
+         .fs-#{$size-name} {
+            font-size: var(--fs-#{$size-name});
+         }
+      } 
+      $first-font-size-map: false; 
+   }
+}

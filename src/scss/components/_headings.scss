@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+.title-1 {
+  @include title(
+    $title-1-font-size,
+    $title-1-color
+  );
+}
+.title-2 {
+  @include title(
+    $title-2-font-size,
+    $title-2-color
+  );
+}
+.title-3 {
+  @include title(
+    $title-3-font-size,
+    $title-3-color
+  );
+}

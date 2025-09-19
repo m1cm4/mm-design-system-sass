@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.hero{
+   --grid-gap: #{$size-10};
+   //background-image: url('../../img/hero-bg.webp');
+   background-size: cover;
+   background-position: center;
+
+   &-description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: $size-4;
+   }
+
+   img{
+      border-radius: $border-radius-2;
+   }
+}

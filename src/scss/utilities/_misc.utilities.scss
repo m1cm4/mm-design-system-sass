@@ -1,0 +1,25 @@
+// pour debuggage
+.border-r{
+   border: 1px solid red;
+}
+.border-w{
+   border: 1px solid white;
+}
+.border-b{
+   border: 1px solid black;
+}
+.border-y{
+   border: 1px solid yellow;
+}
+
+.user-select-disabled{
+   user-select: none;
+}
+
+.hide{
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      position: absolute; 
+  left: -999em;
+}

@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+.flex-group{
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: var(--flex-column-gap, $flex-group-gap);
+   row-gap: var(--flex-row-gap, calc( $flex-group-gap / 2 ));
+   width:fit-content;
+
+  &[data-width="full"]{
+   width: 100%;
+  }
+
+  &[data-spacing="space-between"]{
+   justify-content: space-between;
+  }
+}
+
+.flex-group.flex-full{
+   width: 100%
+}
+
+.flex-group.mi-auto{
+   justify-content: center;
+}

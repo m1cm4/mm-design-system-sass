@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+/*
+Espacer verticalement les éléments dans un flux
+(pas pour grid ou flex) */
+/* 
+NB :
+----
+le sélecteur correspond à
+.flux > * + *
+mais en utilisant ":where" , la 
+spécificité est très basse
+et donc le "overwrite" de la règle css est
+plus facile
+*/
+/*
+
+personnaliser la variabl :ajouter à l'élément html
+<p style="--flux-ecart: 0.5rem">
+}
+*/
+.flow > *:where(:not(:first-child)){
+   margin-top: var(--flow-space, 1rem)
+}
+
+// added generator loop for classes related to each size
+@each $size-px,$size-value  in $sizes{
+  .flow-#{$size-px} > *:where(:not(:first-child)){
+              margin-top: $size-value;
+         }
+  }

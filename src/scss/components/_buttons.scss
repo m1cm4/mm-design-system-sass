@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+
+// unifie le style peut importe si la classe est donnée aux
+// <a> ou <button>
+.button {
+   display: inline-flex;
+   cursor: pointer;
+   user-select: none;
+   font-family: $button-font-family;
+   font-size: $button-font-size;
+   line-height: 1;
+   text-decoration: none;
+   text-transform: $button-text-transform;
+   border: $button-border;
+   border-radius: $button-border-radius;
+   justify-self: center;
+   padding: $button-padding;
+   font-weight: $button-font-weight;
+   
+   transition : 200ms ease-in-out; 
+   
+   &[data-type="accent"]{
+      background-color: $button-accent-background;
+      color: $button-accent-color;
+      &:is(:hover,:focus){
+         color: $button-accent-color-hover;
+         background-color: $button-accent-background-hover;
+      }
+   }
+
+   &[data-type="primary"]{
+      background-color: $button-primary-background;
+      color: $button-primary-color;
+      &:is(:hover,:focus){
+         color: $button-primary-color-hover;
+         background-color: $button-primary-background-hover;
+      }
+   }
+}
