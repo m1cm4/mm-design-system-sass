@@ -5,13 +5,13 @@
    background: $site-header-background-color;
    padding: $site-header-padding;
 
-   &-layout{
+   &--inner{
       display: flex;
       gap: $size-4;
       align-items: $site-header-align;
       justify-content: $site-header-justify-small-screens;
 
-    @include mq(medium) {
+    @include mq($site-header-media-query-large-screen-breakpoint) {
       justify-content: $site-header-justify-large-screens;
     }
    }

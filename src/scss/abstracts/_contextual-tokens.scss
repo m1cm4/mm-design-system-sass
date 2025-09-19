@@ -61,33 +61,36 @@ $title-3-font-size: $font-size-600;
 $title-3-color: $title-color-default;
 
 //  LAYOUT ======================================
+$flow-space: 1rem;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 $hero-padding-block: clamp(15rem, 22dvh, torem(320));
-$section-padding-block: clamp(1.7rem, 10dvh, torem(94));// responsive height
+$section-padding-block: clamp(1.7rem, 10dvh, torem(50));// responsive height
 
 $container-min-margin-inline: $size-4;
-$container-max-width-s: torem(570);//35.6rem
-$container-max-width-m: torem(1024);//64rem
-$container-max-width-xl: torem(1200);//75rem
+$container-max-width-narrow: torem(570);//35.6rem
+$container-max-width-medium: torem(1024);//64rem
+$container-max-width-wide: torem(1200);//75rem
 
 $auto-grid-min: min(250px, 100%);
 
 // HEADERS ======================================
-$site-header-background-color: $color-primary-800;
-$site-header-color: $color-neutral-100;
+$site-header-background-color: $color-neutral-200;
+$site-header-color: $color-neutral-700;
 $site-header-padding: $size-8 0;
 $site-header-margin: 0;
+
 $site-header-justify-small-screens: center;
 $site-header-justify-large-screens: space-between;
+$site-header-media-query-large-screen-breakpoint: "medium";
 $site-header-align: center;
 
 // FOOTER =======================================
-$site-footer-background-color: $color-primary-800;
-$site-footer-text-color: $color-primary-100;
+$site-footer-background-color: $color-neutral-200;
 $site-footer-padding: $size-8 0;
-$site-footer-link-font-family: $font-family-accent;
-$site-footer-link-color: $color-neutral-100;
+$site-footer-text-color: $color-primary-100;
+$site-footer-link-font-family: $font-family-base;
+$site-footer-link-color: $color-primary-600;
 $site-footer-link-color-hover: $color-accent-400;
 $site-footer-link-text-decoration: none;
 
@@ -95,7 +98,7 @@ $site-footer-link-text-decoration: none;
 $navigation-color: $site-header-color;
 $navigation-color-hover: $color-primary-300;
 $navigation-font-size: $font-size-400;
-$navigation-gap: $size-9;
+$navigation-gap: $size-5;
 $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
