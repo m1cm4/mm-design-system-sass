@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.border-radius-1 {
+  border-radius: $border-radius-1;
+}
+
+.border-radius-2 {
+  border-radius: $border-radius-2;
+}
+
+.round {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}

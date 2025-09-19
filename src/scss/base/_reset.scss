@@ -1,0 +1,25 @@
+// TODO
+// regarder les règles reset de 'normalize', de Josh Comeau et de Andy Bell
+// à intégrer dans mon reset
+
+*,
+*::after,
+*::before{
+   box-sizing: border-box;
+}
+
+*{   
+   margin: 0;
+   padding: 0;
+   font: inherit;
+}
+
+
+img, svg, picture{
+   display: block;
+   max-width: 100%;
+}
+
+ul{
+   list-style: none;
+}

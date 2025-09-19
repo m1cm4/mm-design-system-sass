@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+
+.card{
+   display: grid;
+   gap: $card-flow-spacing;
+   padding: $card-body-padding;
+   background-color: $card-background-default;
+   font-family: $card-font-family;
+   color: $card-color-default;
+   line-height: $card-line-height;
+   border-radius: $card-border-radius;
+   box-shadow: $card-box-shadow;
+
+   &-title {
+      @include title($card-title-font-size,$card-title-color-default);
+   }
+}
+
+// voir https://smolcss.dev/#smol-card-component 
+// des idées à reprendre pour un layout de card

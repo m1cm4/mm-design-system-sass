@@ -1,0 +1,35 @@
+//local fonts converted from ttf to woff2, woff 
+//via https://www.fontsquirrel.com/tools/webfont-generator or https://cloudconverter.com
+
+// variable font
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2"),
+  url("/fonts/Inter-VariableFont_opsz,wght.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  font-style: italic;
+  src: url("/fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format("woff2"),
+  url("/fonts/Inter-Italic-VariableFont_opsz,wght.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Epunda";
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/EpundaSlab-VariableFont_wght.woff2") format("woff2"),
+  url("/fonts/EpundaSlab-VariableFont_wght.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Epunda";
+  font-display: swap;
+  font-style: italic;
+  src: url("/fonts/EpundaSlab-Italic-VariableFont_wght.woff2") format("woff2"),
+  url("/fonts/EpundaSlab-Italic-VariableFont_wght.woff") format("woff");
+}

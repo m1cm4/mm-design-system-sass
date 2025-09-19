@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+/**
+* $val: value in px, rem ou without unit
+* @return : number in rem
+* 
+**/
+
+@function torem($val){
+   @if math.unit($val) == "" {
+      @return  math.div($val,16) * 1rem;
+   }
+   @if math.unit($val) == "px" or math.unit($val) == "" {
+      @return  math.div($val,16px) * 1rem;
+   }
+   @if math.unit($val) == "rem"{
+      @return  val;
+   }
+   @error "error when convert the value '#{$val}' in rem"  
+}
+
+@function stripUnit($number) {
+   @if meta.type-of($number) == "number" and not math.is-unitless($number) {
+     @return math.div($number, $number * 0 + 1);
+   }
+   @return $number;
+}

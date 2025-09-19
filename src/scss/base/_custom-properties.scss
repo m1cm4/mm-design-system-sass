@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+@use "sass:meta";
+
+:root{
+   
+   // colors
+   @each $color, $shade-map in $active-theme {
+      @each $shade, $value in $shade-map {
+         --#{$color}-#{$shade}: #{$value};
+      }
+   }
+
+   @if $enable-media-query-dark-mode {      
+      @media (prefers-color-scheme: dark) {
+         @each $color, $shade-map in $dark-colors-palette {
+            @each $shade, $value in $shade-map {
+               --#{$color}-#{$shade}: #{$value};
+            }
+         }
+      }
+   }
+   
+   // theme selelected manually by the visitor
+   // 'data-theme' assigned via js
+   @if meta.global-variable-exists("light-colors-palette"){
+      body[data-theme="light"] {
+         @each $color, $shade-map in $light-colors-palette {
+            @each $shade, $value in $shade-map {
+               --#{$color}-#{$shade}: #{$value};
+            }
+         }
+      }
+   }
+   
+   @if meta.global-variable-exists("dark-colors-palette"){
+      body[data-theme="dark"] {
+         @each $color, $shade-map in $dark-colors-palette {
+            @each $shade, $value in $shade-map {
+               --#{$color}-#{$shade}: #{$value};
+            }
+         }
+      }
+   }
+   
+   // font-sizes
+   $first: true;//le premier groupe n'est pas déclaré dans un media query
+   @each $screen-size, $size-map in $font-sizes{
+      @if $first{ 
+         @each $size-name,$size-value in $size-map{
+            --fs-#{$size-name}:#{$size-value};
+         }
+         $first: false;  
+      }
+      @else{
+         @include mq($screen-size) {
+            @each $size-name,$size-value in $size-map{
+               --fs-#{$size-name}:#{$size-value};
+            }
+         }
+      }
+   }
+}

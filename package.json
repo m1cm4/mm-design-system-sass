@@ -1,0 +1,20 @@
+{
+  "name": "premier-install",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": "> 0.15%, last 2 versions, not dead",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "sass-embedded": "^1.89.2",
+    "vite": "^6.3.5",
+    "postcss-preset-env": "^10.2.4"
+  },
+  "dependencies": {
+  }
+}

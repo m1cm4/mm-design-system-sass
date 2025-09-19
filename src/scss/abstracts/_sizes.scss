@@ -1,0 +1,45 @@
+@use "unit.functions" as *;
+// GLOBAL TOKENS ============
+
+// map for utilities/spacing
+$sizes:( 
+0: 0,        
+1: torem(4),//    .25rem
+2: torem(8),//    .5
+3: torem(12),//   .75
+4: torem(16),//   1rem
+5: torem(20),//   1.25
+6: torem(24),//   1.5 
+7: torem(28),//   1.75
+8: torem(32),//   2rem
+9: torem(40),//   2.5
+10: torem(48),//  3rem
+11: torem(64),//  4
+12: torem(80),//  5rem
+13: torem(96),//  6
+14: torem(128),// 8
+15: torem(160),// 10
+);
+
+
+// GENERIC CONTEXTUAL TOKENS ============
+// used in sass files
+$size-0: torem(0);
+$size-1: torem(4);  
+$size-2: torem(8);
+$size-3: torem(12); 
+$size-4: torem(16); 
+$size-5: torem(20); 
+$size-6: torem(24); 
+$size-7: torem(28); 
+$size-8: torem(32);
+$size-9: torem(40); 
+$size-10: torem(48); 
+$size-11: torem(64);
+$size-12: torem(80); 
+$size-13: torem(96); 
+$size-14: torem(128);
+$size-15: torem(160);
+
+$size-fluid-1: clamp($size-2, 2vw, $size-4);
+$size-fluid-2: clamp($size-4, 4vw, $size-6);
