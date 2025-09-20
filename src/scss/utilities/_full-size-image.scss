@@ -1,0 +1,82 @@
+@use "../abstracts" as *;
+
+
+/*
+
+
+--space-top: 0px;
+--space-bottom: 0px;
+*/
+
+
+.full-height-image,
+.full-size-image{
+   --space-top: 0px;
+   --space-bottom: 0px;
+   
+   &.-position-right,
+   &:is(:last-child){
+      margin-bottom: calc($section-padding-block * -1);
+   }
+   
+   
+   &.-position-left,
+   &:is(:first-child){
+      margin-top: calc($section-padding-block * -1);
+   }
+   
+   @include mq(medium){
+      &.-position-left,
+      &.-position-right,
+      &:is(:first-child),
+      &:is(:last-child){
+         padding-bottom: var(--padding-bottom);
+         padding-top: var(--padding-top);
+         margin-top: calc($section-padding-block * -1);
+         margin-bottom: calc($section-padding-block * -1);
+         // resolve :
+         // - problem if parent is flexs with align-items: centered on 
+         // - allow to define a space on top or bottom
+         height: calc( 100% + $section-padding-block *2 - var(--space-top) - var(--space-bottom)); 
+         transform: translateY(
+         calc( var(--space-top) * 0.5 - var(--space-bottom) * 0.5 )
+         );
+      } 
+   }
+
+   .image,
+   img{
+      object-fit:cover;
+      //object-position: 50% bottom;
+      height:100%;
+   }
+}
+
+.full-size-image{
+   // compensate the inline margins of containers and give to full-size-image the body width.
+   margin-right: calc($container-min-margin-inline * -1);
+   margin-left: calc($container-min-margin-inline * -1);
+   
+   // 
+   @include mq(medium){
+      &.-position-right,
+      &:is(:last-child){
+         margin-left:0;
+      }
+      
+      &.-position-left,
+      &:is(:first-child){
+         margin-right:0;
+      }
+   }
+   
+   @include mq(large){
+            // cancel the effect in medium size viewport
+
+      margin-inline: 0;
+   }
+   
+   img{
+      width:100%;
+   }
+}
