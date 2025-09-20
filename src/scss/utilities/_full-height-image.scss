@@ -1,0 +1,64 @@
+@use "../abstracts" as *;
+
+
+.full-height-image{
+   --padding-top: 0;
+   --padding-bottom: 0;
+   padding-bottom: var(--padding-bottom);
+   padding-top: var(--padding-top);
+
+   &.-position-right{
+         margin-bottom: calc($section-padding-block * -1);
+         padding-top: 0;
+
+   }
+   &.-position-left{
+   margin-top: calc($section-padding-block * -1);
+   padding-bottom:0
+   }
+
+   @include mq(medium){
+      &.-position-right, &.-position-left{
+      padding-bottom: var(--padding-bottom);
+      padding-top: var(--padding-top);
+      margin-top: calc($section-padding-block * -1);
+      margin-bottom: calc($section-padding-block * -1);
+      // probleme apparait si est appliqué align-items: centered sur le parent flex solution:
+      //height: calc(100% + $section-padding-block *2)
+      }
+   }
+   .image,
+   img{
+      object-fit:cover;
+      //object-position: 50% bottom;
+      height:100%;
+   }
+}
+
+/*
+.full-height-image{
+   padding-top: 20px;
+ 
+   border: 1px solid red;
+
+   &.-position-right{
+         margin-bottom: calc($section-padding-block * -1);
+   }
+   &.-position-left{
+   margin-top: calc($section-padding-block * -1);
+   }
+
+   @include mq(medium){
+      margin-top: calc($section-padding-block * -1);
+      margin-bottom: calc($section-padding-block * -1);
+      // probleme apparait si est appliqué align-items: centered sur le parent flex solution:
+      //height: calc(100% + $section-padding-block *2)
+   }
+
+   img{
+      object-fit:cover;
+      //object-position: 50% bottom;
+      height:100%;
+   }
+}
+*/

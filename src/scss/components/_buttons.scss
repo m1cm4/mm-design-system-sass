@@ -10,20 +10,26 @@
    font-family: $button-font-family;
    font-size: $button-font-size;
    line-height: 1;
+   color: $button-default-color;
    text-decoration: none;
    text-transform: $button-text-transform;
+   background-color: $button-default-background;
    border: $button-border;
    border-radius: $button-border-radius;
    justify-self: center;
    padding: $button-padding;
    font-weight: $button-font-weight;
-   
    transition : $button-animation; 
    
    &.-large{
       padding: $button-large-padding;
    }
-
+   
+   &:is(:hover,:focus){
+      color: $button-default-color-hover;
+      background-color: $button-default-background-hover;
+   }
+   
    &.-accent,
    &[data-type="accent"]{
       background-color: $button-accent-background;
@@ -33,6 +39,7 @@
          background-color: $button-accent-background-hover;
       }
    }
+   
    &.-primary,
    &[data-type="primary"]{
       background-color: $button-primary-background;

@@ -8,14 +8,15 @@ $active-theme: $light-colors-palette;
 $enable-media-query-dark-mode: true;//false= il n'y a pas de double modes à prendre en compte 
 
 // COLORS =======================================
-$color-background-default: $color-neutral-100;
+$color-background-default: $color-neutral-050;
 $color-text-default: $color-neutral-700;
 $color-text-interactive-default: $color-primary-400;
 $color-text-interactive-hover: $color-accent-500;
 
 // RADIUS =======================================
-$border-radius-1: $size-2;//8px
-$border-radius-2: $size-4;//16px
+$border-radius-1: $size-1;
+$border-radius-2: $size-2;
+$border-radius-3: $size-3;
 
 // BOX SHADOW ===================================
 $box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012),
@@ -61,11 +62,11 @@ $title-3-font-size: $font-size-600;
 $title-3-color: $title-color-default;
 
 //  LAYOUT ======================================
-$flow-space: 1rem;
+$flow-space: 2rem;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 $hero-padding-block: clamp(15rem, 22dvh, torem(320));
-$section-padding-block: clamp(1.7rem, 10dvh, torem(50));// responsive height
+$section-padding-block: clamp(1.7rem, 8dvh, torem(60));// responsive height
 
 $container-min-margin-inline: $size-4;
 $container-max-width-narrow: torem(570);//35.6rem
@@ -75,7 +76,7 @@ $container-max-width-wide: torem(1200);//75rem
 $auto-grid-min: min(250px, 100%);
 
 // HEADERS ======================================
-$site-header-background-color: $color-neutral-200;
+$site-header-background-color: $color-neutral-100;
 $site-header-color: $color-neutral-700;
 $site-header-padding: $size-8 0;
 $site-header-margin: 0;
@@ -86,7 +87,7 @@ $site-header-media-query-large-screen-breakpoint: "medium";
 $site-header-align: center;
 
 // FOOTER =======================================
-$site-footer-background-color: $color-neutral-200;
+$site-footer-background-color: $color-neutral-100;
 $site-footer-padding: $size-8 0;
 $site-footer-text-color: $color-primary-100;
 $site-footer-link-font-family: $font-family-base;
@@ -105,7 +106,7 @@ $navigation-font-weight: $body-font-weight;
 $navigation-letter-spacing: $letter-spacing-wide;
 
 $fine-print-font-size: $font-size-200;
-$fine-print-color: $color-neutral-400;
+$fine-print-color: $color-neutral-500;
 $fine-print-link-font-size: $fine-print-font-size;
 $fine-print-link-font-color: $fine-print-color;
 
@@ -131,23 +132,23 @@ $button-padding: 0.75em 2em;
 $button-large-padding: .86em 1.2em;
 $button-border: 0;
 $button-border-radius: $border-radius-1;
-$button-animation: 280ms ease-out;
+$button-animation: 180ms ease-out;
 
 
-$button-default-background: transparent;
-$button-default-background-hover: $color-neutral-200;
 $button-default-color: $link-color;
+$button-default-background: transparent;
+$button-default-background-hover: $color-neutral-000;
 $button-default-color-hover: $link-color-hover;
 
 $button-primary-color: $color-neutral-100;
 $button-primary-background: $color-primary-500;
-$button-primary-color-hover: $color-neutral-100;
-$button-primary-background-hover: $color-primary-800;
+$button-primary-color-hover: $color-neutral-800;
+$button-primary-background-hover: $color-accent-200;
 
 $button-accent-color: $color-neutral-100;
 $button-accent-background: $color-accent-400;
 $button-accent-color-hover: $color-neutral-100;
-$button-accent-background-hover: $color-accent-500;
+$button-accent-background-hover: $color-accent-600;
 
 // CARD ========================================= 
 // for gap > $grid-gap
@@ -155,7 +156,7 @@ $card-flow-spacing: $size-2;
 $card-padding: $size-8;
 $card-box-shadow: $box-shadow-1;
 $card-border-radius: $border-radius-2;
-$card-background-default: $color-primary-100;
+$card-background-default: $color-neutral-000;
 $card-color-default: $body-text-color;
 $card-font-family: $body-font-family;
 $card-line-height: $body-line-height;
