@@ -12,10 +12,7 @@
    border-radius: $card-border-radius;
    box-shadow: $card-box-shadow;
 
-   &-title {
+   &--title {
       @include title($card-title-font-size,$card-title-color-default);
    }
 }
-
-// voir https://smolcss.dev/#smol-card-component 
-// des idées à reprendre pour un layout de card

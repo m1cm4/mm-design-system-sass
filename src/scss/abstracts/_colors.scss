@@ -1,7 +1,7 @@
 // GLOBAL TOKENS ============
 // private
 // global color tokens
-$-clr-gray-white: oklch(100% 0.00011 271.152);
+$-clr-gray-white: rgb(255, 255, 255);
 $-clr-gray-050: oklch(95% 0.00011 271.152);
 $-clr-gray-100: oklch(92% 0.00104 11.297);
 $-clr-gray-150: oklch(85% 0.0001 271.152);
@@ -163,21 +163,21 @@ $light-colors-palette: (
     "1000": $-clr-black,
   ),
   "accent": (
-    "100": $-clr-deeppink-100,
-    "200": $-clr-deeppink-200,
-    "300": $-clr-deeppink-300,
-    "400": $-clr-deeppink-400,
-    "500": $-clr-deeppink-500,
-    "600": $-clr-deeppink-600,
-    "700": $-clr-deeppink-700,
-    "800": $-clr-deeppink-800,
-    "900": $-clr-deeppink-900,
+    "100": $-clr-pink-100,
+    "200": $-clr-pink-200,
+    "300": $-clr-pink-300,
+    "400": $-clr-pink-400,
+    "500": $-clr-pink-500,
+    "600": $-clr-pink-600,
+    "700": $-clr-pink-700,
+    "800": $-clr-pink-800,
+    "900": $-clr-pink-900,
   ),
   "primary": (
     "100": $-clr-skyblue-100,
     "200": $-clr-skyblue-200,
     "300": $-clr-skyblue-300,
-    "400": $-clr-skyblue-400,
+    "400": $-clr-skyblue-500,
     "500": $-clr-skyblue-500,
     "600": $-clr-skyblue-600,
     "700": $-clr-skyblue-700,
@@ -189,38 +189,38 @@ $light-colors-palette: (
 $dark-colors-palette: (
   "neutral": (
      "000": $-clr-black,
-    "050": $-clr-gray-800,
-    "100": $-clr-gray-700,
+    "050": $-clr-gray-700,
+    "100": $-clr-gray-600,
     "150": $-clr-gray-600,
     "200": $-clr-gray-500,
     "300": $-clr-gray-400,
     "400": $-clr-gray-320,
     "500": $-clr-gray-250,
     "600": $-clr-gray-200,
-    "700": $-clr-gray-150,
+    "700": $-clr-gray-100,
     "800": $-clr-gray-100,
-    "900": $-clr-gray-050,
+    "900": $-clr-gray-white,
     "1000": $-clr-gray-white,
   ),
   "accent": (
-    "100": $-clr-deeppink-900,
-    "200": $-clr-deeppink-800,
-    "300": $-clr-deeppink-700,
-    "400": $-clr-deeppink-600,
-    "500": $-clr-deeppink-500,
-    "600": $-clr-deeppink-400,
-    "700": $-clr-deeppink-300,
-    "800": $-clr-deeppink-200,
-    "900": $-clr-deeppink-100,
+    "100": $-clr-pink-700,
+    "200": $-clr-pink-500,
+    "300": $-clr-pink-500,
+    "400": $-clr-pink-400,
+    "500": $-clr-pink-400,
+    "600": $-clr-pink-400,
+    "700": $-clr-pink-300,
+    "800": $-clr-pink-200,
+    "900": $-clr-pink-100,
   ),
   "primary": (
-    "100": $-clr-skyblue-900,
-    "200": $-clr-skyblue-800,
+    "100": $-clr-skyblue-800,
+    "200": $-clr-skyblue-700,
     "300": $-clr-skyblue-700,
-    "400": $-clr-skyblue-600,
-    "500": $-clr-skyblue-500,
-    "600": $-clr-skyblue-400,
-    "700": $-clr-skyblue-300,
+    "400": $-clr-skyblue-300,
+    "500": $-clr-skyblue-300,
+    "600": $-clr-skyblue-200,
+    "700": $-clr-skyblue-200,
     "800": $-clr-skyblue-200,
     "900": $-clr-skyblue-100,
   ),
@@ -234,11 +234,12 @@ $dark-colors-palette: (
 
 // !! update this list manually if palettes maps change.
 // using custom properties for the theming light/dark mechanism.
-$color-neutral-000: var(--neutral-white);
+$color-neutral-000: var(--neutral-000);
 $color-neutral-050: var(--neutral-050);
 $color-neutral-100: var(--neutral-100);
-$color-neutral-200: var(--neutral-150);
-$color-neutral-250: var(--neutral-200);
+$color-neutral-150: var(--neutral-150);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-250: var(--neutral-250);
 $color-neutral-300: var(--neutral-300);
 $color-neutral-400: var(--neutral-400);
 $color-neutral-500: var(--neutral-500);
