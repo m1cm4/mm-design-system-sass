@@ -13,11 +13,15 @@ a{
    color: $link-color;
 }
 
-a:is(:hover, :focus){
+a:is(:hover, :focus-visible){
    color: $link-color-hover;
 }
 
 
 h1, h2{
  font-family: $title-font-family;
+}
+
+strong{
+   font-weight: $font-weight-bold;
 }

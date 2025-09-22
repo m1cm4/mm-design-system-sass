@@ -21,11 +21,11 @@
    font-weight: $button-font-weight;
    transition : $button-animation; 
    
-   &.-large{
-      padding: $button-large-padding;
+   &.-wide{
+      padding: $button-wide-padding;
    }
    
-   &:is(:hover,:focus){
+   &:is(:hover,:focus-visible){
       color: $button-default-color-hover;
       background-color: $button-default-background-hover;
    }
@@ -34,7 +34,7 @@
    &[data-type="accent"]{
       background-color: $button-accent-background;
       color: $button-accent-color;
-      &:is(:hover,:focus){
+      &:is(:hover,:focus-visible){
          color: $button-accent-color-hover;
          background-color: $button-accent-background-hover;
       }
@@ -44,7 +44,7 @@
    &[data-type="primary"]{
       background-color: $button-primary-background;
       color: $button-primary-color;
-      &:is(:hover,:focus){
+      &:is(:hover,:focus-visible){
          color: $button-primary-color-hover;
          background-color: $button-primary-background-hover;
       }

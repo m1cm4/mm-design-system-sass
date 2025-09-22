@@ -53,11 +53,14 @@ $font-sizes: (
   ),
 );
 
-// private tokens
+// private
+$-fw-200: 200;
+$-fw-300: 300;
 $-fw-400: 400;
 $-fw-500: 500;
 $-fw-600: 600;
 $-fw-700: 700;
+$-fw-800: 800;
 
 
 // GENERIC CONTEXTUAL TOKENS ====================
@@ -77,8 +80,12 @@ $font-size-800: var(--fs-800);
 $font-size-900: var(--fs-900);
 
 
+$font-weight-extra-light: $-fw-200;
+$font-weight-light: $-fw-300;
 $font-weight-regular: $-fw-400;
+$font-weight-medium: $-fw-500;
 $font-weight-semi-bold: $-fw-600;
 $font-weight-bold: $-fw-700;
+$font-weight-extra-bold: $-fw-800;
 
 $letter-spacing-wide: .02em;

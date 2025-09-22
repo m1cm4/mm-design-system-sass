@@ -12,7 +12,7 @@
     font-family: $site-footer-link-font-family;
     letter-spacing: $letter-spacing-wide;
     
-    &:is(:hover, :focus) {
+    &:is(:hover, :focus-visible) {
       color: $site-footer-link-color-hover;
     }
   }
