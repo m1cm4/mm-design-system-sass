@@ -13,7 +13,7 @@
       letter-spacing:$navigation-letter-spacing;
       text-decoration: $navigation-link-text-decoration;
 
-      &:is(:hover, :focus){
+      &:is(:hover, :focus-visible){
          color: $navigation-color-hover;
       }
    }

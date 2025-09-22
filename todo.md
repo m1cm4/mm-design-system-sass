@@ -15,6 +15,7 @@
    - more layouts : bento grid, ...
    - form styling
    - card elements and layouts: see layout of https://smolcss.dev/#smol-card-component for more ideas
+   - hamburger menu
    - gradients
    
 - write doc in HTML, listing and examples of:

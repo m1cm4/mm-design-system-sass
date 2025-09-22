@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 /*
 define space between elements in a flow,
-using "*:where(:not(:first-child))" over "* + * " for its higher specificity
+for its specificity, prefer "*:where(:not(:first-child))" over "* + * " 
 */ 
 
 .flow > *:where(:not(:first-child)){
