@@ -31,7 +31,7 @@
    }
    
    &.-accent,
-   &[data-type="accent"]{
+   &[data-variant="accent"]{
       background-color: $button-accent-background;
       color: $button-accent-color;
       &:is(:hover,:focus-visible){
@@ -41,7 +41,7 @@
    }
    
    &.-primary,
-   &[data-type="primary"]{
+   &[data-variant="primary"]{
       background-color: $button-primary-background;
       color: $button-primary-color;
       &:is(:hover,:focus-visible){

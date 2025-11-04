@@ -10,20 +10,20 @@
  }
 
 /*
-class="container" data-type="narrow"
+class="container" data-variant="narrow"
 class="container -narrow"
 */
-.container[data-type="narrow"], 
+.container[data-variant="narrow"], 
 .container.-narrow{
   --max-width: #{$container-max-width-narrow};
 }
 
-.container[data-type="wide"], 
+.container[data-variant="wide"], 
 .container.-wide{
   --max-width: #{$container-max-width-wide};
 }
 
-.container[data-type="full"],
+.container[data-variant="full"],
 .container.-full{
   --max-width: 100%;
 }
