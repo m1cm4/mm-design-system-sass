@@ -1,35 +1,31 @@
-//local fonts converted from ttf to woff2, woff 
-//via https://www.fontsquirrel.com/tools/webfont-generator or https://cloudconverter.com
-
-// variable font
 @font-face {
   font-family: "Inter";
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/inter/inter-latin-ext.woff2") format("woff2"),
-  url("/fonts/inter/inter-latin-ext.woff") format("woff");
+  src: url("/fonts/inter/Inter-VariableFont_opsz-wght.woff2") format("woff2"),
+  url("/fonts/inter/Inter-VariableFont_opsz-wght.woff") format("woff")
 }
 
 @font-face {
   font-family: "Inter";
   font-display: swap;
   font-style: italic;
-  src: url("/fonts/inter/inter-italic-latin-ext.woff2") format("woff2"),
-  url("/fonts/inter/inter-italic-latin-ext.woff") format("woff");
+  src: url("/fonts/inter/Inter-Italic-VariableFont_opsz-wght.woff2") format("woff2"),
+  url("/fonts/inter/Inter-Italic-VariableFont_opsz-wght.woff") format("woff")
 }
 
 @font-face {
   font-family: "Epunda";
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/epunda-slab/epunda-slab-latin.woff2") format("woff2"),
-  url("/fonts/epunda-slab/epunda-slab-latin.woff") format("woff");
+  src: url("/fonts/epunda-slab/EpundaSlab-VariableFont_wght.woff2") format("woff2"),
+  url("/fonts/epunda-slab/EpundaSlab-VariableFont_wght.woff") format("woff");
 }
 
 @font-face {
   font-family: "Epunda";
   font-display: swap;
   font-style: italic;
-  src: url("/fonts/epunda-slab/epunda-slab-italic-latin.woff2") format("woff2"),
-  url("/fonts/epunda-slab/epunda-slab-italic-latin.woff2") format("woff");
+  src: url("/fonts/epunda-slab/EpundaSlab-Italic-VariableFont_wght.woff2") format("woff2"),
+  url("/fonts/epunda-slab/EpundaSlab-Italic-VariableFont_wght.woff") format("woff");
 }
