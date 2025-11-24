@@ -1,5 +1,11 @@
+@use 'sass:meta';
+@use 'sass:map';
+@use 'sass:list';
 @use 'sass:math';
 
+// ========================
+// Unit Functions
+//  ========================
 /**
 * $val: value in px, rem ou without unit
 * @return : number in rem
@@ -10,7 +16,7 @@
    @if math.unit($val) == "" {
       @return  math.div($val,16) * 1rem;
    }
-   @if math.unit($val) == "px" or math.unit($val) == "" {
+   @if math.unit($val) == "px" {
       @return  math.div($val,16px) * 1rem;
    }
    @if math.unit($val) == "rem"{
@@ -24,4 +30,22 @@
      @return math.div($number, $number * 0 + 1);
    }
    @return $number;
+}
+
+
+// ========================
+// MAP object manipulation
+//  ========================
+@function getElementByIndex($mapObject, $index){
+   $keyList : map.keys($mapObject);
+   $key : list.nth( $keyList, $index);
+   @return map.get($mapObject, $key);
+}
+
+@function isMap($object){
+   @return meta.type-of( $object ) == map;
+}
+
+@function isTwoDimensionalMap($object){
+   @return isMap( getElementByIndex($object, 1) );
 }
