@@ -1,9 +1,7 @@
 @use "sass:meta";
 @use "sass:math";
 @use "sass:map";
-@use "breakpoints" as *;
-@use "contextual-tokens" as *;
-
+@use "../config-abstracts/" as *;
 
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
