@@ -11,10 +11,9 @@
   "browserslist": "> 0.15%, last 2 versions, not dead",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^7.0.2",
+    "baseline-browser-mapping": "^2.8.31",
+    "postcss-preset-env": "^10.2.4",
     "sass-embedded": "^1.89.2",
-    "vite": "^6.3.5",
-    "postcss-preset-env": "^10.2.4"
-  },
-  "dependencies": {
+    "vite": "^6.3.5"
   }
 }

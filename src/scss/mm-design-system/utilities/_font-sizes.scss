@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+@use "../utils.functions" as *;
+/**
+create utility classes from config-abstracts/_typography $font-size.
+using only the first map is $font-size is two dimensional.
+
+!! all the nested map in $font-size must have a consistent structure
+(same number of keys and same name)
+*/
+
+$fontSizeMap : $font-sizes;
+
+@if isTwoDimensionalMap($font-sizes){
+   $fontSizeMap: getElementByIndex($font-sizes, 1);
+}
+
+@each $size-name, $size-value in $fontSizeMap {
+   .fs-#{$size-name} {
+      font-size: var(--fs-#{$size-name});
+   }
+} 
