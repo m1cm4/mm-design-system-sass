@@ -45,6 +45,9 @@ $body-background-color: $color-background-default;
 // links ========================================
 $link-color: $color-text-interactive-default;
 $link-color-hover: $color-text-interactive-hover;
+$link-decoration-default: none;
+$link-decoration-hover: none;
+$link-font-weight: $font-weight-regular;
 
 // TITLES =======================================
 $title-font-family: $font-family-accent;
@@ -104,6 +107,15 @@ $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
 $navigation-letter-spacing: $letter-spacing-wide;
+
+// skip navigation
+$skip-nav-color: $color-neutral-100;
+$skip-nav-background-color: $color-primary-500;
+$skip-nav-padding: $size-3 $size-6;
+$skip-nav-outline-color: $color-accent-400;
+$skip-nav-outline-size: 2px;
+$skip-nav-outline-offset: 3px;
+$skip-nav-position: left;
 
 $fine-print-font-size: $font-size-200;
 $fine-print-color: $color-neutral-500;
