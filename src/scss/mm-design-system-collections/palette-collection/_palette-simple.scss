@@ -1,0 +1,39 @@
+// copy and use it in colors.scss
+
+$-clr-black: hsl(0, 0%, 0%);
+$-clr-grey-500: hsl(0, 0%, 20%);
+$-clr-grey-400: hsl(0, 0%, 35%);
+$-clr-grey-300: hsl(0, 0%, 55%);
+$-clr-grey-200: hsl(0, 0%, 75%);
+$-clr-grey-100: hsl(0, 0%, 90%);
+$-clr-white: hsl(0, 0%, 100%);
+
+$-clr-blue-500: oklch(26.213% 0.07453 251.752);
+$-clr-blue-400: oklch(36.426% 0.11805 254.542);
+$-clr-blue-300: oklch(46.509% 0.15488 255.323);
+$-clr-blue-200: oklch(55.857% 0.1908 256.019);
+$-clr-blue-100: oklch(70.277% 0.16087 251.238);
+
+$-clr-yellow-500: oklch(67.741% 0.14019 80.151);
+$-clr-yellow-400: oklch(82.533% 0.17051 79.939);
+$-clr-yellow-300: oklch(85.53% 0.15995 85.14);
+$-clr-yellow-200: oklch(88.862% 0.13267 87.883);
+$-clr-yellow-100: oklch(92.331% 0.092 88.384);
+
+$-clr-orange-500: oklch(49.896% 0.11976 57.708);
+$-clr-orange-400: oklch(73.411% 0.17938 56.099);
+$-clr-orange-300: oklch(78.016% 0.16329 63.186);
+$-clr-orange-200: oklch(87.922% 0.09219 69.815);
+$-clr-orange-100: oklch(93.546% 0.04861 71.123);
+
+$-clr-red-500: oklch(41.688% 0.16169 28.04);
+$-clr-red-400: oklch(61.906% 0.24004 28.035);
+$-clr-red-300: oklch(63.638% 0.22079 26.155);
+$-clr-red-200: oklch(75.901% 0.14562 14.826);
+$-clr-red-100: oklch(89.393% 0.05737 7.426);
+
+$-clr-green-500: oklch(47.663% 0.13875 142.565);
+$-clr-green-400: oklch(76.523% 0.21358 142.952);
+$-clr-green-300: oklch(84.167% 0.17725 143.472);
+$-clr-green-200: oklch(88.342% 0.11574 144.218);
+$-clr-green-100: oklch(93.17% 0.06805 143.795);
