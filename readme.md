@@ -1,6 +1,6 @@
 # mm-design-system-sass
 
-Simple Design System written in SASS
+My Design System in SASS
 
 ###  Tools & Libraries
 Vite  
