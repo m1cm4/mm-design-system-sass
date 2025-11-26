@@ -4,12 +4,12 @@
 @use "../mm-design-system/utils.functions" as *;
 
 // THEMES =======================================
-$active-theme: $light-colors-palette;
-$enable-media-query-dark-mode: true;//false= il n'y a pas de double modes à prendre en compte 
+$active-theme: $default-palette;
+$enable-media-query-dark-mode: false;//false= il n'y a pas de double modes à prendre en compte 
 
 // COLORS =======================================
-$color-background-default: $color-neutral-050;
-$color-text-default: $color-neutral-700;
+$color-background-default: $color-neutral-100;
+$color-text-default: $color-neutral-500;
 $color-text-interactive-default: $color-primary-400;
 $color-text-interactive-hover: $color-accent-500;
 
@@ -51,7 +51,7 @@ $link-font-weight: $font-weight-regular;
 
 // TITLES =======================================
 $title-font-family: $font-family-accent;
-$title-color-default: $color-neutral-800;
+$title-color-default: $color-neutral-500;
 $title-font-weight: $font-weight-semi-bold;
 $title-letter-spacing: $letter-spacing-wide;
 $title-line-height: 1.1;
@@ -72,15 +72,15 @@ $hero-padding-block: clamp(15rem, 22dvh, torem(320));
 $section-padding-block: clamp(1.7rem, 8dvh, torem(60));// responsive height
 
 $container-min-margin-inline: $size-4;
-$container-max-width-narrow: torem(570);//35.6rem
-$container-max-width-medium: torem(1024);//64rem
-$container-max-width-wide: torem(1200);//75rem
+$container-max-width-narrow: torem(570);/* optional */ //35.6rem
+$container-max-width-default: torem(1024);/* required*/ //64rem 
+$container-max-width-wide: torem(1200);/* optional */ //75rem 
 
 $auto-grid-min: min(250px, 100%);
 
 // HEADERS ======================================
 $site-header-background-color: $color-neutral-100;
-$site-header-color: $color-neutral-700;
+$site-header-color: $color-neutral-500;
 $site-header-padding: $size-8 0;
 $site-header-margin: 0;
 
@@ -94,7 +94,7 @@ $site-footer-background-color: $color-neutral-100;
 $site-footer-padding: $size-8 0;
 $site-footer-text-color: $color-primary-100;
 $site-footer-link-font-family: $font-family-base;
-$site-footer-link-color: $color-primary-600;
+$site-footer-link-color: $color-primary-500;
 $site-footer-link-color-hover: $color-accent-400;
 $site-footer-link-text-decoration: none;
 
@@ -149,18 +149,18 @@ $button-animation: 180ms ease-out;
 
 $button-default-color: $link-color;
 $button-default-background: transparent;
-$button-default-background-hover: $color-neutral-000;
+$button-default-background-hover: $color-neutral-100;
 $button-default-color-hover: $link-color-hover;
 
 $button-primary-color: $color-neutral-100;
 $button-primary-background: $color-primary-500;
-$button-primary-color-hover: $color-neutral-800;
+$button-primary-color-hover: $color-neutral-500;
 $button-primary-background-hover: $color-accent-200;
 
 $button-accent-color: $color-neutral-100;
 $button-accent-background: $color-accent-400;
 $button-accent-color-hover: $color-neutral-100;
-$button-accent-background-hover: $color-accent-600;
+$button-accent-background-hover: $color-accent-500;
 
 // CARD ========================================= 
 // for gap > $grid-gap
@@ -168,7 +168,7 @@ $card-flow-spacing: $size-2;
 $card-padding: $size-8;
 $card-box-shadow: $box-shadow-1;
 $card-border-radius: $border-radius-2;
-$card-background-default: $color-neutral-000;
+$card-background-default: $color-neutral-100;
 $card-color-default: $body-text-color;
 $card-font-family: $body-font-family;
 $card-line-height: $body-line-height;

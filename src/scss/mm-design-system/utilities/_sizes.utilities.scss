@@ -4,6 +4,14 @@
    margin-inline: auto;
 }
 
+.mis-auto, .ml-auto{
+   margin-inline-start: auto;
+}
+
+.mie-auto, .mr-auto{
+   margin-inline-end: auto;
+}
+
 .width-full{
    width: 100%;
 }
