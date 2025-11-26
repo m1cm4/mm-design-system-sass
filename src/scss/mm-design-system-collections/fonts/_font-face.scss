@@ -1,4 +1,10 @@
 @font-face {
+  font-family: "Bricolage Grotesque";
+  font-display: swap;
+  src: url("/fonts/BricolageGrotesque/BricolageGrotesque-VariableFont_opsz-wdth-wght.woff2") format("woff2"),
+    url("/fonts/BricolageGrotesque/BricolageGrotesque-VariableFont_opsz-wdth-wght.woff") format("woff");
+}
+@font-face {
   font-family: "Epunda";
   font-display: swap;
   font-style: normal;
@@ -13,6 +19,8 @@
   src: url("/fonts/epunda-slab/EpundaSlab-Italic-VariableFont_wght.woff2") format("woff2"),
   url("/fonts/epunda-slab/EpundaSlab-Italic-VariableFont_wght.woff") format("woff");
 }
+
+
 
 @font-face {
   font-family: "Inter";
@@ -29,6 +37,23 @@
   src: url("/fonts/inter/Inter-Italic-VariableFont_opsz-wght.woff2") format("woff2"),
   url("/fonts/inter/Inter-Italic-VariableFont_opsz-wght.woff") format("woff")
 }
+
+@font-face {
+  font-family: "Satoshi";
+  font-display: swap;
+  src: url("fonts/Satoshi/Satoshi-Variable.woff2") format("woff2"),
+    url("/fonts/fonts/Satoshi/Satoshi-Variable.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-display: swap;
+  font-style: italic;
+  src: url("/fonts/Satoshi/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi/Satoshi-VariableItalic.woff") format("woff");
+}
+
+
 
 @font-face {
   font-family: "Source Sans Pro";
@@ -52,6 +77,8 @@
   src: url("/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
     url("/fonts/sourcesanspro-bold-webfont.woff") format("woff");
 }
+
+
 
 @font-face {
   font-family: "Supreme";
