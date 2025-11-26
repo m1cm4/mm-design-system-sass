@@ -7,11 +7,7 @@
    row-gap: var(--flex-row-gap, calc( $flex-group-gap / 2 ));
    width:fit-content;
    
-   &.-full, 
-   &[data-width="full"]{
-      width: 100%;
-   }
-   
+
    &.-space-between,
    &[data-spacing="space-between"]{
       justify-content: space-between;
@@ -19,5 +15,9 @@
    
    &.mi-auto{
       justify-content: center;
+   }
+
+   &.-vcenter{
+      align-items: center;
    }
 }
