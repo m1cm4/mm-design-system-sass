@@ -128,12 +128,12 @@ $hero-padding-block: clamp(15rem, 15vh, 20rem);
 
 // LOGO =========================================
 
-// $logo-fill-default: $color-primary-400;
-// $logo-fill-header: $color-primary-200;
-// $logo-fill-footer: $color-accent-400;
-// $logo-size-default: 14rem;
-// $logo-size-header: $logo-size-default;
-// $logo-size-footer : $logo-size-default;
+$logo-fill-default: $color-primary-400;
+$logo-fill-header: $color-primary-200;
+$logo-fill-footer: $color-accent-400;
+$logo-size-default: 14rem;
+$logo-size-header: $logo-size-default;
+$logo-size-footer : $logo-size-default;
 
 // BUTTON =======================================
 $button-font-family: $body-font-family;
