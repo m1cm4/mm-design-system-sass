@@ -31,11 +31,11 @@ $subprops: (
 );
 @each $size-px,$size-value  in $sizes{
   @each $prop-class,$prop  in $props{
-      .#{$prop-class}#{$size-px}{
+      .#{$prop-class}-#{$size-px}{
           #{$prop}: #{$size-value};
       }
       @each $subprop-class,$subprop in $subprops{
-         .#{$prop-class}#{$subprop-class}#{$size-px}{
+         .#{$prop-class}#{$subprop-class}-#{$size-px}{
              #{$prop}-#{$subprop}: #{$size-value};
          }
       }

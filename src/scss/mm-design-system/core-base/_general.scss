@@ -7,6 +7,9 @@ body{
    color: $body-text-color;
    font-size: $body-font-size;
    line-height: $body-line-height;
+   -webkit-font-smoothing: antialiased ;
+    -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
 }
 
 a{
@@ -21,9 +24,9 @@ a:is(:hover, :focus-visible){
 }
 
 
-h1, h2{
- font-family: $title-font-family;
-}
+// h1, h2{
+//  font-family: $title-font-family;
+// }
 
 strong{
    font-weight: $font-weight-bold;
