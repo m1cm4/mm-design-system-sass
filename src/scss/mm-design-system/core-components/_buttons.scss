@@ -49,4 +49,14 @@
          background-color: $button-primary-background-hover;
       }
    }
+
+      &.-secondary,
+   &[data-variant="secondary"]{
+      background-color: $button-secondary-background;
+      color: $button-secondary-color;
+      &:is(:hover,:focus-visible){
+         color: $button-secondary-color-hover;
+         background-color: $button-secondary-background-hover;
+      }
+   }
 }

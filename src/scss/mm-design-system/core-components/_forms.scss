@@ -15,6 +15,12 @@ input:not(.button) {
    padding: $form-input-padding;
    border: $form-input-border-default;
    border-radius: $form-input-border-radius;
+   &:focus, &:focus-visible{
+         outline-color: $form-input-focus-outline-color;
+         outline-style: solid;
+      outline-width: $form-input-focus-outline-width;
+
+   }
 }
 
 

@@ -152,10 +152,15 @@ $button-default-background: transparent;
 $button-default-background-hover: $color-neutral-100;
 $button-default-color-hover: $link-color-hover;
 
-$button-primary-color: $color-neutral-100;
-$button-primary-background: $color-primary-500;
-$button-primary-color-hover: $color-neutral-500;
-$button-primary-background-hover: $color-accent-200;
+$button-primary-color: $color-neutral-white;
+$button-primary-background: $color-primary-400;
+$button-primary-color-hover: $color-neutral-white;
+$button-primary-background-hover: $color-primary-500;
+
+$button-secondary-color: $color-primary-400;
+$button-secondary-background: transparent;
+$button-secondary-color-hover: $color-neutral-white;
+$button-secondary-background-hover: $color-primary-500;
 
 $button-accent-color: $color-neutral-100;
 $button-accent-background: $color-accent-400;
@@ -192,6 +197,9 @@ $form-input-border-default: 3px solid $color-primary-200;
 $form-input-border-focus: 3px solid $color-primary-400;
 $form-input-padding: $size-3;
 $form-input-border-radius: $border-radius-1;
+
+$form-input-focus-outline-color: $color-primary-300;
+$form-input-focus-outline-width: 2px;
 
 $form-placeholder-color: $color-primary-300;
 $form-placeholder-font-family: $form-input-font-family;
