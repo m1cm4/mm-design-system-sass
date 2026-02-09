@@ -4,6 +4,17 @@
   "version": "0.1.0",
   "description" : "MM Design System — SCSS core (tokens, components, layouts, utilities)",
   "exports": {
+    ".": "./scss/mm-design-system/index.scss",
+    "./core-base": "./scss/mm-design-system/core-base/index.scss",
+    "./layouts": "./scss/mm-design-system/layouts/index.scss",
+    "./core-components": "./scss/mm-design-system/core-components/index.scss",
+    "./utilities": "./scss/mm-design-system/utilities/index.scss",
+    "./abstracts": "./scss/mm-design-system/_abstracts.scss",
+    "./accessors": "./scss/mm-design-system/_accessors.scss",
+    "./mixins": "./scss/mm-design-system/_mixins.scss",
+    "./functions": "./scss/mm-design-system/_utils.functions.scss",
     "./scss/*": "./scss/*"
-  }
+  },
+  "sass": "./scss/mm-design-system/index.scss",
+  "style": "./scss/mm-design-system/index.scss"
 }
