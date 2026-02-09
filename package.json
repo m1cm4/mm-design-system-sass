@@ -1,19 +1,12 @@
 {
-  "name": "premier-install",
+  "name": "mm-design-system-monorepo",
   "private": true,
-  "version": "0.1",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "browserslist": "> 0.15%, last 2 versions, not dead",
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^7.0.2",
-    "baseline-browser-mapping": "^2.8.31",
-    "postcss-preset-env": "^10.2.4",
-    "sass-embedded": "^1.89.2",
-    "vite": "^6.3.5"
+    "dev": "pnpm --filter @mm-ds/examples dev",
+    "dev:blog": "pnpm --filter @mm-ds/examples dev:blog",
+    "dev:responsive": "pnpm --filter @mm-ds/examples dev:responsive",
+    "dev:docs": "pnpm --filter @mm-ds/docs dev",
+    "build:docs": "pnpm --filter @mm-ds/docs build",
+    "preview:docs": "pnpm --filter @mm-ds/docs preview"
   }
 }

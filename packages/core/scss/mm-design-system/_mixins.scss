@@ -1,7 +1,8 @@
 @use "sass:meta";
 @use "sass:math";
 @use "sass:map";
-@use "../project-abstracts/" as *;
+/* path resoved with loadPaths SASS strategy, see vite config, */
+@use "project-abstracts/" as *;
 
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {

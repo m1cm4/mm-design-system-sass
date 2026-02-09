@@ -1,7 +1,7 @@
 @use 'sass:map';
 @use 'sass:math';
-
-@use '../project-abstracts' as *;
+/* path resoved with loadPaths SASS strategy, see vite config, */
+@use 'project-abstracts' as *;
 
 
 @function clr($color, $shade, $scheme: $active-theme) {
