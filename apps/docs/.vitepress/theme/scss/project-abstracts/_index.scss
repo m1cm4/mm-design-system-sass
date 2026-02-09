@@ -1,0 +1,7 @@
+// Version minimale — à adapter pour le thème docs
+// Pour que le core puisse résoudre project-abstracts, le site docs a besoin d'un minimum. Copier depuis apps/examples/simple-example/scss/project-abstracts/ comme point de départ, ou créer une version minimale :
+@forward "breakpoints";
+@forward "colors";
+@forward "sizes";
+@forward "typography";
+@forward "contextual-tokens";

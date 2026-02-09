@@ -1,0 +1,100 @@
+@use "mm-design-system/utils.functions" as *;
+@use "sass:math";
+
+// FONT Families ------------------- 
+
+// private
+$-ff-Inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$-ff-Epunda: "Epunda", Cambria, Georgia, Times, serif;
+
+// generic contextual token
+$font-family-base: $-ff-Inter;
+$font-family-accent: $-ff-Epunda;
+
+
+// FONT SIZES ------------------- 
+// ref table:
+// px | rem 
+// ---------    
+// 14   0.875   
+// 14.8 0.925 
+// 16   1      
+// 18   1.125   
+// 21   1.3125
+// 24   1.5    
+// 28    1.75  
+// 36   2.25 
+// 42   2.625  
+// 48   3      
+// 56   3.5  
+// 60   3.75 
+// 72   4.5
+
+//1st method : with clamp 
+// $font-sizes: (
+//    800: clamp( torem(28), .5rem + 5.3dvw, torem(60)),
+//    600: clamp( torem(16), .5rem + 2.4dvw, torem(27)),//le p sous le titre 2
+//    500: clamp( torem(14), .5rem + 1.8dvw, torem(21)),//tire secondaire
+//    400: clamp( 16px, .5rem + 1.6dvw, torem(18)),
+//    300: torem(16),
+// );
+
+// 2nd method : manually
+$font-sizes: (
+  "small": (
+    "200": torem(14),
+    "300": torem(14.8),
+    "400": torem(16),
+    "500": torem(18),
+    "600": torem(18),
+    "700": torem(28),
+    "800": torem(36),
+    "900": torem(40),
+  ),
+  "large": (
+    "200": torem(14),
+    "300": torem(14.8),
+    "400": torem(16),
+    "500": torem(18),
+    "600": torem(21),
+    "700": torem(28),
+    "800": torem(42),
+    "900": torem(48),
+  ),
+);
+
+// generic contextual token
+// !! keep same structure as $font-sizes map
+$font-size-200: var(--fs-200);
+$font-size-300: var(--fs-300);
+$font-size-400: var(--fs-400);
+$font-size-500: var(--fs-500);
+$font-size-600: var(--fs-600);
+$font-size-700: var(--fs-700);
+$font-size-800: var(--fs-800);
+$font-size-900: var(--fs-900);
+
+// FONT WEIGHTS ------------------- 
+// private
+$-fw-100: 100;
+$-fw-200: 200;
+$-fw-300: 300;
+$-fw-400: 400;
+$-fw-500: 500;
+$-fw-600: 600;
+$-fw-700: 700;
+$-fw-800: 800;
+$-fw-900: 900;
+// generic contextual token
+$font-weight-thin: $-fw-100;
+$font-weight-extra-light: $-fw-200;
+$font-weight-light: $-fw-300;
+$font-weight-regular: $-fw-400;
+$font-weight-medium: $-fw-500;
+$font-weight-semi-bold: $-fw-600;
+$font-weight-bold: $-fw-700;
+$font-weight-extra-bold: $-fw-800;
+$font-weight-black: $-fw-900;
+
+// LETTER SPACING ------------------- 
+$letter-spacing-wide: .02em;

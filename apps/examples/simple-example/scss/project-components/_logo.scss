@@ -1,0 +1,16 @@
+@use "mm-design-system/abstracts" as *;
+
+
+.logo{
+   fill: $logo-fill-default;
+   max-width: $logo-size-default;
+
+   .site-header &{
+      fill: $logo-fill-header;
+      max-width: $logo-size-header;
+   }
+   .site-footer & {
+      fill: $logo-fill-footer;
+      max-width: $logo-size-footer;
+   }
+}

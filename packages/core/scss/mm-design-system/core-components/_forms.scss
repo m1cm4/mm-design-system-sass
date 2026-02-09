@@ -1,0 +1,69 @@
+@use '../abstracts/' as *;
+
+label{
+   color: $form-label-color;
+   font-family: $form-label-font-family;
+   font-size: $form-label-font-size;
+   font-weight: $form-label-font-weight;
+}
+
+input:not(.button) {
+   font-size: $form-input-font-size;
+   font-weight: $form-input-font-weight;
+   color: $form-input-color;
+   background-color: $form-input-background-color;
+   padding: $form-input-padding;
+   border: $form-input-border-default;
+   border-radius: $form-input-border-radius;
+   &:focus, &:focus-visible{
+         outline-color: $form-input-focus-outline-color;
+         outline-style: solid;
+      outline-width: $form-input-focus-outline-width;
+
+   }
+}
+
+
+::placeholder {
+   font-family: $form-placeholder-font-family;
+   color: $form-placeholder-color;
+   font-size: $form-placeholder-font-size;
+   font-weight: $form-placeholder-font-weight;
+}   
+
+
+
+ .form-group {
+    display: grid;
+    gap: $form-group-spacing;
+  }
+
+
+/* 
+.contact-form{
+   display: grid;
+   gap: $size-7;
+   
+   @include mq(medium){
+      grid-template-columns: 1fr 1fr;
+      
+   }
+   
+   .form-group, .button{
+      display: grid;
+      max-width: torem(300);
+      justify-self: center;
+      width:100%;   
+   }
+   
+   .button{  
+      
+      @include mq(medium){
+         //push button to right
+         grid-column-end: -1;
+         justify-self: end;
+         width: fit-content;
+      }
+   }  
+}
+   */

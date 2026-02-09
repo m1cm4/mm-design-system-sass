@@ -1,0 +1,54 @@
+@use '../abstracts/' as *;
+@use 'sass:meta';
+
+.container {
+  --padding: #{$container-min-margin-inline} * 2;
+  --max-width: #{$container-max-width-default};
+  
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
+
+/*
+class="container" data-variant="narrow"
+class="container -narrow"
+*/
+
+// checking if variable is set in contextual-tokens
+@if meta.global-variable-exists("container-max-width-narrow"){
+  .container[data-variant="narrow"], 
+  .container.-narrow{
+    --max-width: #{$container-max-width-narrow};
+  }
+}
+
+@if meta.global-variable-exists("container-max-width-wide"){
+  .container[data-variant="wide"], 
+  .container.-wide{
+    --max-width: #{$container-max-width-wide};
+  }
+}
+
+.container[data-variant="full"],
+.container.-full{
+  --max-width: 100%;
+}
+
+.container.-image-full-width{
+  max-width: $page-max-width;
+  margin-inline: 0;
+
+  & > *:not(.image-wrapper, img, picture, svg, p:has(img)){
+      width: min(100% - var(--padding), var(--max-width));
+      margin-inline: auto;
+   }
+  
+   > img{ width: 100%;}
+  
+  /* <img> in Astro content ar wrapped in <p>*/
+  > p:has(img){
+    width: 100%;
+    max-width: 100%;
+    img{width:100%}
+  }
+}

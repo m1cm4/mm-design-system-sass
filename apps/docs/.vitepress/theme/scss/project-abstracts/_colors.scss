@@ -1,0 +1,135 @@
+// PRIVATE GLOBAL TOKENS ============
+$-clr-black: hsl(0, 0%, 0%);
+$-clr-grey-500: hsl(0, 0%, 20%);
+$-clr-grey-400: hsl(0, 0%, 35%);// +- le grey-300 dans l'"exercice
+$-clr-grey-300: hsl(0, 0%, 55%);// +- le grey-200 dans l'exercice
+$-clr-grey-200: hsl(0, 0%, 75%);
+$-clr-grey-100: hsl(0, 0%, 90%);// +-le grey-100 dans l'exercice
+$-clr-white: hsl(0, 0%, 100%);
+
+$-clr-blue-500: oklch(26.213% 0.07453 251.752);
+$-clr-blue-400: oklch(36.426% 0.11805 254.542);
+$-clr-blue-300: oklch(46.509% 0.15488 255.323);
+$-clr-blue-200: oklch(55.857% 0.1908 256.019);
+$-clr-blue-100: oklch(70.277% 0.16087 251.238);
+
+$-clr-yellow-500: oklch(67.741% 0.14019 80.151);
+$-clr-yellow-400: oklch(82.533% 0.17051 79.939);
+$-clr-yellow-300: oklch(85.53% 0.15995 85.14);
+$-clr-yellow-200: oklch(88.862% 0.13267 87.883);
+$-clr-yellow-100: oklch(92.331% 0.092 88.384);
+
+$-clr-orange-500: oklch(49.896% 0.11976 57.708);
+$-clr-orange-400: oklch(73.411% 0.17938 56.099);
+$-clr-orange-300: oklch(78.016% 0.16329 63.186);
+$-clr-orange-200: oklch(87.922% 0.09219 69.815);
+$-clr-orange-100: oklch(93.546% 0.04861 71.123);
+
+$-clr-red-500: oklch(41.688% 0.16169 28.04);
+$-clr-red-400: oklch(61.906% 0.24004 28.035);
+$-clr-red-300: oklch(63.638% 0.22079 26.155);
+$-clr-red-200: oklch(75.901% 0.14562 14.826);
+$-clr-red-100: oklch(89.393% 0.05737 7.426);
+
+$-clr-green-500: oklch(47.663% 0.13875 142.565);
+$-clr-green-400: oklch(76.523% 0.21358 142.952);
+$-clr-green-300: oklch(84.167% 0.17725 143.472);
+$-clr-green-200: oklch(88.342% 0.11574 144.218);
+$-clr-green-100: oklch(93.17% 0.06805 143.795);
+
+/** 
+PALETTE MAPS
+Create a $default-palette or a $light-palette and a $dark-palette
+used for CSS custom properties loops creation in base/_custom-properties.scss
+!! after changes,don't forget to manually update the generic contextual token (below)
+*/
+$default-palette: (
+  "neutral": (
+  "white": $-clr-white,
+  "100": $-clr-grey-100,
+  "200": $-clr-grey-200,
+  "300": $-clr-grey-300,
+  "400": $-clr-grey-400,
+  "500": $-clr-grey-500,
+  "black": $-clr-black,
+  ),
+  "primary": (
+  "100": $-clr-blue-100,
+  "200": $-clr-blue-200,
+  "300": $-clr-blue-300,
+  "400": $-clr-blue-400,
+  "500": $-clr-blue-500,
+  ),
+  "secondary": (
+  "100": $-clr-yellow-100,
+  "200": $-clr-yellow-200,
+  "300": $-clr-yellow-300,
+  "400": $-clr-yellow-400,
+  "500": $-clr-yellow-500,
+  ),
+  "accent": (
+  "100": $-clr-orange-100,
+  "200": $-clr-orange-200,
+  "300": $-clr-orange-300,
+  "400": $-clr-orange-400,
+  "500": $-clr-orange-500,
+  ),  
+  "success": (
+  "100": $-clr-green-100,
+  "200": $-clr-green-200,
+  "300": $-clr-green-300,
+  "400": $-clr-green-400,
+  "500": $-clr-green-500,
+  ),  
+  "error": (
+  "100": $-clr-red-100,
+  "200": $-clr-red-200,
+  "300": $-clr-red-300,
+  "400": $-clr-red-400,
+  "500": $-clr-red-500,
+  ),
+);
+
+/** 
+GENERIC CONTEXTUAL TOKENS
+CSS properties are created in base/_custom-properties.scss
+values change at theme selection (light/dark)
+!! must reflect the palette maps structure
+*/
+$color-neutral-white: var(--neutral-white);
+$color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+$color-neutral-400: var(--neutral-400);
+$color-neutral-500: var(--neutral-500);
+$color-neutral-black: var(--neutral-black);
+
+$color-primary-100: var(--primary-100);
+$color-primary-200: var(--primary-200);
+$color-primary-300: var(--primary-300);
+$color-primary-400: var(--primary-400);
+$color-primary-500: var(--primary-500);
+
+$color-secondary-100: var(--secondary-100);
+$color-secondary-200: var(--secondary-200);
+$color-secondary-300: var(--secondary-300);
+$color-secondary-400: var(--secondary-400);
+$color-secondary-500: var(--secondary-500);
+
+$color-accent-100: var(--accent-100);
+$color-accent-200: var(--accent-200);
+$color-accent-300: var(--accent-300);
+$color-accent-400: var(--accent-400);
+$color-accent-500: var(--accent-500);
+
+$color-success-100: var(--success-100);
+$color-success-200: var(--success-200);
+$color-success-300: var(--success-300);
+$color-success-400: var(--success-400);
+$color-success-500: var(--success-500);
+
+$color-error-100: var(--error-100);
+$color-error-200: var(--error-200);
+$color-error-300: var(--error-300);
+$color-error-400: var(--error-400);
+$color-error-500: var(--error-500);

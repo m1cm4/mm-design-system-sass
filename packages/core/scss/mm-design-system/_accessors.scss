@@ -1,0 +1,41 @@
+@use 'sass:map';
+@use 'sass:math';
+/* path resoved with loadPaths SASS strategy, see vite config, */
+@use 'project-abstracts' as *;
+
+
+@function clr($color, $shade, $scheme: $active-theme) {
+   $map: null;
+   @if $scheme == "light" {
+      $map: $light-colors-palette;
+   } @else if $scheme == "dark" {
+      $map: $dark-colors;
+   } @else if $scheme == $active-theme {
+      $map: $active-theme;
+   } @else {
+      @error "unknown scheme";
+   }
+   
+   @if map.has-key($map, $color, $shade) {
+      @return map.get($map, $color, $shade);
+   } @else {
+      @error '$colors does not have that color!';
+   }
+}
+
+@function fs($font-size) {
+   @if map.has-key($font-sizes, $font-size) {
+      @return map.get($font-sizes, $font-size);
+   } @else {
+      @error '$font-sizes does not have that size!';
+   }
+}
+
+@function size($size){
+   @if map.has-key( $sizes, $size){
+      @return map.get($sizes, $size);
+   }
+   @else{
+      @error '$size not found !';
+   }
+}

@@ -1,0 +1,35 @@
+@use "sass:meta";
+@use "sass:math";
+@use "sass:map";
+/* path resoved with loadPaths SASS strategy, see vite config, */
+@use "project-abstracts/" as *;
+
+@mixin mq($size) {
+  @if map.has-key($breakpoints, $size) {
+    $breakpoint: map.get($breakpoints, $size);
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if meta.type-of($size) == number {
+    @if math.is-unitless($size) {
+      @error 'when using a number with @mq() make sure to include a unit';
+    } @else {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  } @else {
+    @error 'the keyword #{$size} is not in the $breakpoints map';
+  }
+}
+
+@mixin title($fs, $color: $title-color-default) {
+  font-size: $fs;
+  color: $color;
+  font-family: $title-font-family;
+  text-transform: $title-text-transform;
+  letter-spacing: $title-letter-spacing;
+  font-weight: $title-font-weight;
+  line-height: $title-line-height;
+  word-break: break-word;
+}
