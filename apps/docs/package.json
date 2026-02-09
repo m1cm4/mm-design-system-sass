@@ -1,0 +1,19 @@
+{
+   "name": "@mm-ds/docs",
+   "private": true,
+   "version": "0.1.0",
+   "type": "module",
+   "scripts": {
+     "dev": "vitepress dev",
+     "build": "vitepress build",
+     "preview": "vitepress preview"
+   },
+   "dependencies": {
+     "@mm-ds/core": "workspace:*"
+   },
+   "devDependencies": {
+     "@types/node": "^22.10.5",
+     "vitepress": "^1.6.3",
+     "sass-embedded": "^1.89.2"
+   }
+ }

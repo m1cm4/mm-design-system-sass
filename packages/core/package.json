@@ -1,0 +1,9 @@
+{
+  "name": "@mm-ds/core",
+  "private": true,
+  "version": "0.1.0",
+  "description" : "MM Design System — SCSS core (tokens, components, layouts, utilities)",
+  "exports": {
+    "./scss/*": "./scss/*"
+  }
+}

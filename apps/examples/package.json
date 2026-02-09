@@ -1,0 +1,24 @@
+{
+   "name": "@mm-ds/examples",
+   "private": true,
+   "version": "0.1.0",
+   "type": "module",
+   "scripts": {
+     "dev": "cross-env EXAMPLE=simple-example vite",
+     "dev:blog": "cross-env EXAMPLE=blog-example vite",
+     "dev:responsive": "cross-env EXAMPLE=full-responsive vite",
+     "build": "cross-env EXAMPLE=simple-example vite build",
+     "build:blog": "cross-env EXAMPLE=blog-example vite build",
+     "build:responsive": "cross-env EXAMPLE=full-responsive vite build"
+   },
+   "dependencies": {
+     "@mm-ds/core": "workspace:*"
+   },
+   "devDependencies": {
+     "cross-env": "^7.0.3",
+     "@fullhuman/postcss-purgecss": "^7.0.2",
+     "postcss-preset-env": "^10.2.4",
+     "sass-embedded": "^1.89.2",
+     "vite": "^6.3.5"
+   }
+ }
