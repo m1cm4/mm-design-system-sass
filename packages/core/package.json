@@ -13,8 +13,12 @@
     "./accessors": "./scss/mm-design-system/_accessors.scss",
     "./mixins": "./scss/mm-design-system/_mixins.scss",
     "./functions": "./scss/mm-design-system/_utils.functions.scss",
-    "./scss/*": "./scss/*"
+    "./scss/*": "./scss/*",
+    "./ts": "./ts/index.ts",
+    "./ts/types": "./ts/types.ts",
+    "./ts/scss-modules": "./ts/scss-modules.d.ts"
   },
   "sass": "./scss/mm-design-system/index.scss",
-  "style": "./scss/mm-design-system/index.scss"
+  "style": "./scss/mm-design-system/index.scss",
+  "types": "./ts/index.ts"
 }

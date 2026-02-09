@@ -1,0 +1,66 @@
+// =============================================================================
+// Design Tokens — TypeScript Bridge
+// =============================================================================
+// Single file that exports all project tokens for TypeScript consumption.
+// Import in TS: import tokens from './scss/ts-bridge/_tokens.module.scss';
+//
+// Maps (colors, sizes, breakpoints, font-sizes) are auto-exported via @each.
+// Individual variables (font weights, families) are listed manually.
+//
+// When you add a token to an existing map (e.g., a new color in $default-palette),
+// the export updates automatically — no changes needed here.
+// Only add lines manually for new individual variables.
+// =============================================================================
+
+@use '../project-abstracts/colors' as *;
+@use '../project-abstracts/sizes' as *;
+@use '../project-abstracts/breakpoints' as *;
+@use '../project-abstracts/typography' as *;
+@use 'sass:map';
+
+:export {
+
+  // ── Colors (auto from $default-palette) ──────────────────────────────
+  @each $color, $shade-map in $default-palette {
+    @each $shade, $value in $shade-map {
+      clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  // ── Sizes (auto from $sizes map: 0–15) ───────────────────────────────
+  @each $step, $value in $sizes {
+    size-#{$step}: #{$value};
+  }
+
+  // ── Sizes fluid (manual — not in map) ────────────────────────────────
+  size-fluid-1: #{$size-fluid-1};
+  size-fluid-2: #{$size-fluid-2};
+
+  // ── Breakpoints (auto from $breakpoints map) ─────────────────────────
+  @each $name, $value in $breakpoints {
+    bp-#{$name}: #{$value};
+  }
+
+  // ── Font sizes (auto from $font-sizes map, "small" breakpoint) ───────
+  @each $size-name, $size-value in map.get($font-sizes, "small") {
+    fs-#{$size-name}: #{$size-value};
+  }
+
+  // ── Font weights (manual — individual variables) ─────────────────────
+  fw-thin: #{$font-weight-thin};
+  fw-extra-light: #{$font-weight-extra-light};
+  fw-light: #{$font-weight-light};
+  fw-regular: #{$font-weight-regular};
+  fw-medium: #{$font-weight-medium};
+  fw-semi-bold: #{$font-weight-semi-bold};
+  fw-bold: #{$font-weight-bold};
+  fw-extra-bold: #{$font-weight-extra-bold};
+  fw-black: #{$font-weight-black};
+
+  // ── Font families (manual — individual variables) ────────────────────
+  ff-base: #{$font-family-base};
+  ff-accent: #{$font-family-accent};
+
+  // ── Letter spacing (manual) ──────────────────────────────────────────
+  ls-wide: #{$letter-spacing-wide};
+}

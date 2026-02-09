@@ -4,6 +4,7 @@ todo.md
 logs
 *.log
 .markdown-styles.css
+conception/
 
 
 # Monorepo
