@@ -71,6 +71,7 @@ $flex-group-gap: $size-4;
 $hero-padding-block: clamp(15rem, 22dvh, torem(320));
 $section-padding-block: clamp(1.7rem, 8dvh, torem(60));// responsive height
 
+$page-max-width: torem(1280);
 $container-min-margin-inline: $size-4;
 $container-max-width-narrow: torem(570);/* optional */ //35.6rem
 $container-max-width-default: torem(1024);/* required*/ //64rem 

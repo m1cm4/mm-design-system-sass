@@ -1,4 +1,7 @@
 @use "../abstracts/" as *;
+html{
+   scrollbar-gutter: stable;
+}
 
 body{
    background-color: $body-background-color;

@@ -33,3 +33,22 @@ class="container -narrow"
 .container.-full{
   --max-width: 100%;
 }
+
+.container.-image-full-width{
+  max-width: $page-max-width;
+  margin-inline: 0;
+
+  & > *:not(.image-wrapper, img, picture, svg, p:has(img)){
+      width: min(100% - var(--padding), var(--max-width));
+      margin-inline: auto;
+   }
+  
+   > img{ width: 100%;}
+  
+  /* <img> in Astro content ar wrapped in <p>*/
+  > p:has(img){
+    width: 100%;
+    max-width: 100%;
+    img{width:100%}
+  }
+}
