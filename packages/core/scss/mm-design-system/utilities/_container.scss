@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 @use 'sass:meta';
 
+@layer utilities {
 .container {
   --padding: #{$container-min-margin-inline} * 2;
   --max-width: #{$container-max-width-default};
@@ -51,4 +52,5 @@ class="container -narrow"
     max-width: 100%;
     img{width:100%}
   }
+}
 }

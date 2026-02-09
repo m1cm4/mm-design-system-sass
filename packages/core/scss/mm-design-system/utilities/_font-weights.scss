@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-
+@layer utilities {
 .fw-extra-light{
       font-weight: $font-weight-thin;
 }
@@ -31,4 +31,4 @@
 .fw-black{
       font-weight: $font-weight-black;
 }
-
+}

@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
-
+@layer components {
 .card{
    display: grid;
    gap: $card-flow-spacing;
@@ -15,4 +15,5 @@
    &--title {
       @include title($card-title-font-size,$card-title-color-default);
    }
+}
 }

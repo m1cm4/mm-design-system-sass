@@ -20,7 +20,9 @@ export default {
             // PurgeCSS will not find the use of this rewritten rules in the html, and, unfortunatly, will purge the css from it.
             'logical-properties-and-values': false,
             'opacity-percentage': true,
-            'text-decoration-shorthand': true
+            'text-decoration-shorthand': true,
+            // Keep native @layer — supported by 96%+ browsers (Chrome 99+, FF 97+, Safari 15.4+)
+            'cascade-layers': false
          }
       })
    ]

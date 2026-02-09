@@ -1,5 +1,7 @@
 @use "../abstracts" as *;
 
+@layer components {
 .section{
    padding-block: $section-padding-block;
+}
 }

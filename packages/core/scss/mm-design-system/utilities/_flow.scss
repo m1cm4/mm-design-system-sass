@@ -1,4 +1,6 @@
 @use "../abstracts" as *;
+
+@layer utilities {
 /*
 define space between elements in a flow,
 for its specificity, prefer "*:where(:not(:first-child))" over "* + * " 
@@ -14,3 +16,4 @@ for its specificity, prefer "*:where(:not(:first-child))" over "* + * "
               margin-top: $size-value;
          }
   }
+}

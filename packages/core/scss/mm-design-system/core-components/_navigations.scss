@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-
+@layer components {
 .nav {
   --flex-column-gap: #{$navigation-gap};
   list-style: none;
@@ -19,4 +19,5 @@
    }
 
 
+}
 }

@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-
+@layer components {
 // unifie le style peut importe si la classe est donnée aux
 // <a> ou <button>
 .button {
@@ -59,4 +59,5 @@
          background-color: $button-secondary-background-hover;
       }
    }
+}
 }

@@ -2,18 +2,24 @@
 // MM Design System - Point d'entrée principal
 // =============================================================================
 // Importe toutes les couches du design system dans l'ordre correct.
-// Utilisez ce fichier pour charger l'ensemble du système.
 //
 // Usage:
 //   @use '@mm-design-system/core/scss/mm-design-system';
 //
+// CSS Cascade Layers:
+//   Le design system utilise @layer (base, layouts, components, utilities)
+//   pour garantir un ordre de priorité explicite indépendant de la spécificité.
+//   Les styles utilisateur (hors layer) écrasent automatiquement le DS.
+//
 // Pour des imports sélectifs, utilisez les points d'entrée individuels:
+//   @use '@mm-design-system/core/scss/mm-design-system/layers'; // toujours en premier
 //   @use '@mm-design-system/core/scss/mm-design-system/core-base';
 //   @use '@mm-design-system/core/scss/mm-design-system/layouts';
 //   @use '@mm-design-system/core/scss/mm-design-system/core-components';
 //   @use '@mm-design-system/core/scss/mm-design-system/utilities';
 // =============================================================================
 
+@forward 'layers';
 @forward 'core-base';
 @forward 'layouts';
 @forward 'core-components';

@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+@layer components {
 .hero{
    //--grid-gap: #{$size-10};
    //background-image: url('../../img/hero-bg.webp');
@@ -19,4 +20,5 @@
       border-radius: $border-radius-2;
       width: 100%;
    }
+}
 }

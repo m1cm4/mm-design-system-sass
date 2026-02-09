@@ -1,5 +1,6 @@
 @use '../abstracts/' as *;
 
+@layer components {
 .title-1 {
   @include title(
     $title-1-font-size,
@@ -17,4 +18,5 @@
     $title-3-font-size,
     $title-3-color
   );
+}
 }

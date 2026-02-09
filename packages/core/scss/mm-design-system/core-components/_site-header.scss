@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
 
+@layer components {
 .site-header{
   --site-header-padding: #{$site-header-padding};
   color: $site-header-color;
@@ -17,4 +18,5 @@
     }
     
   }
+}
 }

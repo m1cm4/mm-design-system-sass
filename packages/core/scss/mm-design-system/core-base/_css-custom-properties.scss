@@ -2,6 +2,7 @@
 @use "../abstracts" as *;
 @use "../utils.functions" as *;
 
+@layer base {
 :root{
    
    // COLORS PROPERTIES ============================================
@@ -70,5 +71,6 @@
       @each $size-name,$size-value in $font-sizes{
          --fs-#{$size-name}:#{$size-value};
       }
-   } 
+   }
+}
 }

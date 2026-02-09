@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
 
+@layer components {
 .skip-nav-link {
   position: absolute;
   transform: translateY(-100%);
@@ -26,4 +27,5 @@
     outline: $skip-nav-outline-color $skip-nav-outline-size solid;
     outline-offset: $skip-nav-outline-offset;
   }
+}
 }

@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+@layer utilities {
 // @each $color, $shade-map in $active-theme {
 //    @each $shade, $value in $shade-map {
 //       .clr-#{$color}-#{$shade} {
@@ -22,4 +23,5 @@
       background-color: var(--#{$color}-#{$shade});
     }
   }
+}
 }

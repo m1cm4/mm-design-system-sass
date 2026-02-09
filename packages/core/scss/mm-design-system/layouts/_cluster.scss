@@ -1,5 +1,7 @@
-.cluster {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+@layer layouts {
+  .cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }

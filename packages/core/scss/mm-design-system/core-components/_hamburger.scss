@@ -1,5 +1,4 @@
-
-
+@layer components {
 // mon hamburger bouton
 
 
@@ -87,4 +86,4 @@ $hamburger-button-animation: 0.16s  ease-out;
       &::after { transform: rotate(45deg); }
    }
 }
-
+}

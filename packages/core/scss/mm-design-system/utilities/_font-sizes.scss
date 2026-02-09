@@ -1,5 +1,7 @@
 @use "../abstracts" as *;
 @use "../utils.functions" as *;
+
+@layer utilities {
 /**
 create utility classes from config-abstracts/_typography $font-size.
 using only the first map is $font-size is two dimensional.
@@ -19,3 +21,4 @@ $fontSizeMap : $font-sizes;
       font-size: var(--fs-#{$size-name});
    }
 } 
+}

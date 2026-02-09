@@ -1,5 +1,6 @@
 @use '../abstracts/' as *;
 
+@layer components {
 label{
    color: $form-label-color;
    font-family: $form-label-font-family;
@@ -67,3 +68,4 @@ input:not(.button) {
    }  
 }
    */
+}

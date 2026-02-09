@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+@layer utilities {
 .mi-auto, .mx-auto{
    margin-inline: auto;
 }
@@ -40,4 +41,5 @@ $subprops: (
          }
       }
   }
+}
 }

@@ -1,41 +1,44 @@
 @use "../abstracts/" as *;
-html{
-   scrollbar-gutter: stable;
-}
 
-body{
-   background-color: $body-background-color;
-   font-family: $body-font-family;
-   font-weight: $body-font-weight;
-   color: $body-text-color;
-   font-size: $body-font-size;
-   line-height: $body-line-height;
-   -webkit-font-smoothing: antialiased ;
-    -moz-osx-font-smoothing: grayscale;
-   text-rendering: optimizeLegibility;
-   
-   /* always fill the window height */
-   min-height: 100dvh;
-   display: grid;
-   grid-template-rows: auto 1fr auto;
-}
+@layer base {
+   html{
+      scrollbar-gutter: stable;
+   }
 
-a{
-   color: $link-color;
-   text-decoration: $link-decoration-default;
-   font-weight: $link-font-weight;
-}
+   body{
+      background-color: $body-background-color;
+      font-family: $body-font-family;
+      font-weight: $body-font-weight;
+      color: $body-text-color;
+      font-size: $body-font-size;
+      line-height: $body-line-height;
+      -webkit-font-smoothing: antialiased ;
+       -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
 
-a:is(:hover, :focus-visible){
-   color: $link-color-hover;
-   text-decoration: $link-decoration-hover;
-}
+      /* always fill the window height */
+      min-height: 100dvh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+   }
+
+   a{
+      color: $link-color;
+      text-decoration: $link-decoration-default;
+      font-weight: $link-font-weight;
+   }
+
+   a:is(:hover, :focus-visible){
+      color: $link-color-hover;
+      text-decoration: $link-decoration-hover;
+   }
 
 
-// h1, h2{
-//  font-family: $title-font-family;
-// }
+   // h1, h2{
+   //  font-family: $title-font-family;
+   // }
 
-strong{
-   font-weight: $font-weight-bold;
+   strong{
+      font-weight: $font-weight-bold;
+   }
 }

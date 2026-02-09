@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-
+@layer components {
 .site-footer{
    background-color: $site-footer-background-color;
    color: $site-footer-text-color;
@@ -26,4 +26,5 @@
       font-size: $fine-print-link-font-size;
       text-decoration: none;
    }
+}
 }

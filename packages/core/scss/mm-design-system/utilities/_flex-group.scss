@@ -1,5 +1,6 @@
 @use '../abstracts/' as *;
 
+@layer utilities {
 .flex-group{
    display: flex;
    flex-wrap: wrap;
@@ -20,4 +21,5 @@
    &.-vcenter{
       align-items: center;
    }
+}
 }

@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
 
+@layer utilities {
 .border-radius-1 {
   border-radius: $border-radius-1;
 }
@@ -15,4 +16,5 @@
 .round {
   border-radius: 50%;
   aspect-ratio: 1 / 1;
+}
 }
